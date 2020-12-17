@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    font-family: "Poppins" , sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+#home.container > * {
+    text-align: center;
+}
+
+#container {
+    margin-top: 10vh;
+    min-height: 90vh;
+}
+
+#userForm , #animateBox {
+    animation: insetEffect 1s ease 0.2s;
+    animation-fill-mode: backwards;
+}
+
+
+
+
+@keyframes insetEffect{
+    from {
+        clip-path: inset(50% 0 50% 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
